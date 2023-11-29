@@ -78,6 +78,8 @@ private:
     static const int bufferSize = 1024;
 
     float stereoWidth;
+    std::mutex stereoWidthMutex;
+
     juce::AudioProcessorValueTreeState parameters;
 
     //==============================================================================

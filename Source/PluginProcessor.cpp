@@ -21,22 +21,25 @@ juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout() {
 //==============================================================================
 StereospeadAudioProcessor::StereospeadAudioProcessor()
     : AudioProcessor(BusesProperties()
-#if ! JucePlugin_IsMidiEffect
-#if ! JucePlugin_IsSynth
+#if !JucePlugin_IsMidiEffect
+#if !JucePlugin_IsSynth
         .withInput("Input", juce::AudioChannelSet::stereo(), true)
 #endif
         .withOutput("Output", juce::AudioChannelSet::stereo(), true)
 #endif
     ),
     midSideBuffer(bufferSize), // circular buffer
+    stereoWidth(0.0f), // o un altro valore iniziale appropriato
     parameters(*this, nullptr, "Parameters", createParameterLayout())
 {
     
 }
 
 void StereospeadAudioProcessor::setStereoWidth(float newWidth) {
-     stereoWidth = newWidth;
+    std::lock_guard<std::mutex> lock(stereoWidthMutex);
+    stereoWidth = newWidth;
 }
+
 StereospeadAudioProcessor::~StereospeadAudioProcessor()
 {
 }
@@ -151,6 +154,13 @@ void StereospeadAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, 
     for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
         buffer.clear (i, 0, buffer.getNumSamples());
 
+    // Acquisire una copia locale di stereoWidth
+    float localStereoWidth;
+    {
+        std::lock_guard<std::mutex> lock(stereoWidthMutex);
+        localStereoWidth = stereoWidth;
+    }
+
      for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         auto* channelData = buffer.getWritePointer (channel);
@@ -167,7 +177,7 @@ void StereospeadAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, 
                side = (buffer.getSample(0, sample) - buffer.getSample(1, sample)) * 0.5f;
                
                 // Add Spread on Side
-                side *= stereoWidth;
+               side *= localStereoWidth;
                 
                 // Add Mid & Side to circular buffer
                 midSideBuffer[bufferWritePosition] = { mid, side };
