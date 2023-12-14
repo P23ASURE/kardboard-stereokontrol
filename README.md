@@ -1,7 +1,7 @@
-# StereospeadAudioProcessor
+# Stereo Kontrol
 
 ## Introduction
-The "StereospeadAudioProcessor" is a sophisticated audio plugin developed using the JUCE framework. This plugin focuses on manipulating the stereo image of audio tracks, allowing users to dynamically adjust the stereo width of their audio.
+The "Stereo Kontrol" is a sophisticated audio plugin developed using the JUCE framework. This plugin focuses on manipulating the stereo image of audio tracks, allowing users to dynamically adjust the stereo width of their audio.
 
 ## Features
 The key feature of the plugin is the ability to control the stereo spread of the audio signal:
@@ -16,3 +16,5 @@ The key feature of the plugin is the ability to control the stereo spread of the
 ## Technical Details
 - The plugin uses a Mid-Side processing technique to manage the stereo image. It calculates the Mid (sum) and Side (difference) components of the stereo signal and adjusts the Side component based on the `Stereo Width` parameter.
 - The plugin supports both mono and stereo audio tracks.
+
+![Stereo Kontrol](https://github.com/P23ASURE/kardboard-stereokontrol/blob/main/stereokontrol_screenshot.png)
