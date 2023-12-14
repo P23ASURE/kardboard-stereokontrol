@@ -102,3 +102,93 @@ Builds/VisualStudio2022/.vs/stereospead/FileContentIndex/4a6fecf8-e591-4936-914c
 Builds/VisualStudio2022/.vs/stereospead/FileContentIndex/2021a979-14f9-445e-b5a7-ef942c8ec9de.vsidx
 Builds/VisualStudio2022/.vs/stereospead/FileContentIndex/1d42e6a0-10e9-4afc-9552-1a749e58ea35.vsidx
 Builds/VisualStudio2022/.vs/stereospead/FileContentIndex/0476c52c-74f9-49d3-b5a7-2c08ed90be28.vsidx
+Builds/VisualStudio2022/.vs/stereospead/FileContentIndex/0758bad5-d022-4d7d-8e61-5b64dd96d220.vsidx
+Builds/VisualStudio2022/.vs/stereospead/FileContentIndex/085c9247-18c2-4f24-83f0-c99b0430e88d.vsidx
+Builds/VisualStudio2022/.vs/stereospead/FileContentIndex/30cac70b-d54f-4ae2-a62d-0a8678e022e0.vsidx
+Builds/VisualStudio2022/.vs/stereospead/FileContentIndex/c11f0d6d-c11f-40f2-a131-c5a8181b3ea0.vsidx
+Builds/VisualStudio2022/.vs/stereospead/v17/ipch/AutoPCH/dfe02a72bff38ede/PLUGINPROCESSOR.ipch
+Builds/VisualStudio2022/.vs/stereospead/FileContentIndex/041aee1f-22c0-44ae-9dfe-2492fba48eaa.vsidx
+Builds/VisualStudio2022/.vs/stereospead/v17/ipch/AutoPCH/149bda650ccf87f1/PLUGINEDITOR.ipch
+Builds/VisualStudio2022/.vs/stereospead/v17/ipch/AutoPCH/528a7cc62165f54b/PLUGINEDITOR.ipch
+Builds/VisualStudio2022/x64/Release/Shared Code/BinaryData.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_basics.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_devices.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_formats.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_plugin_client_ARA.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_plugin_client_RTAS_1.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_plugin_client_RTAS_2.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_plugin_client_RTAS_3.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_plugin_client_RTAS_4.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_plugin_client_RTAS_utils.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_plugin_client_utils.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_processors.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_processors_ara.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_processors_lv2_libs.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_audio_utils.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_core.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_data_structures.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_dsp.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_events.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_graphics.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_gui_basics.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/include_juce_gui_extra.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/PluginEditor.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/PluginProcessor.obj
+Builds/VisualStudio2022/x64/Release/Shared Code/stereosp.EEA8BFFE.tlog/CL.10604.write.1.tlog
+Builds/VisualStudio2022/x64/Release/Shared Code/stereosp.EEA8BFFE.tlog/CL.command.1.tlog
+Builds/VisualStudio2022/x64/Release/Shared Code/stereosp.EEA8BFFE.tlog/Cl.items.tlog
+Builds/VisualStudio2022/x64/Release/Shared Code/stereosp.EEA8BFFE.tlog/CL.read.1.tlog
+Builds/VisualStudio2022/x64/Release/Shared Code/stereosp.EEA8BFFE.tlog/Lib-link.read.1.tlog
+Builds/VisualStudio2022/x64/Release/Shared Code/stereosp.EEA8BFFE.tlog/Lib-link.write.1.tlog
+Builds/VisualStudio2022/x64/Release/Shared Code/stereosp.EEA8BFFE.tlog/Lib.command.1.tlog
+Builds/VisualStudio2022/x64/Release/Shared Code/stereosp.EEA8BFFE.tlog/stereospead_SharedCode.lastbuildstate
+Builds/VisualStudio2022/x64/Release/Shared Code/stereospead.Build.CppClean.log
+Builds/VisualStudio2022/x64/Release/Shared Code/stereospead.lib
+Builds/VisualStudio2022/x64/Release/Shared Code/stereospead.lib.recipe
+Builds/VisualStudio2022/x64/Release/Shared Code/stereospead.pdb
+Builds/VisualStudio2022/x64/Release/Shared Code/stereospead_SharedCode.log
+Builds/VisualStudio2022/x64/Release/Shared Code/stereospead_SharedCode.vcxproj.FileListAbsolute.txt
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/include_juce_audio_plugin_client_Standalone.obj
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/resources.res
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereosp.362FF119.tlog/CL.command.1.tlog
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereosp.362FF119.tlog/Cl.items.tlog
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereosp.362FF119.tlog/CL.read.1.tlog
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereosp.362FF119.tlog/CL.write.1.tlog
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereosp.362FF119.tlog/link.command.1.tlog
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereosp.362FF119.tlog/link.read.1.tlog
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereosp.362FF119.tlog/link.write.1.tlog
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereosp.362FF119.tlog/link.write.2u.tlog
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereosp.362FF119.tlog/rc.command.1.tlog
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereosp.362FF119.tlog/rc.read.1.tlog
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereosp.362FF119.tlog/rc.write.1.tlog
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereosp.362FF119.tlog/stereospead_StandalonePlugin.lastbuildstate
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereospead.Build.CppClean.log
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereospead.exe
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereospead.exe.recipe
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereospead.iobj
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereospead.pdb
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereospead_StandalonePlugin.log
+Builds/VisualStudio2022/x64/Release/Standalone Plugin/stereospead_StandalonePlugin.vcxproj.FileListAbsolute.txt
+Builds/VisualStudio2022/x64/Release/VST3/include_juce_audio_plugin_client_VST3.obj
+Builds/VisualStudio2022/x64/Release/VST3/resources.res
+Builds/VisualStudio2022/x64/Release/VST3/stereospead.Build.CppClean.log
+Builds/VisualStudio2022/x64/Release/VST3/stereospead.exp
+Builds/VisualStudio2022/x64/Release/VST3/stereospead.iobj
+Builds/VisualStudio2022/x64/Release/VST3/stereospead.lib
+Builds/VisualStudio2022/x64/Release/VST3/stereospead.pdb
+Builds/VisualStudio2022/x64/Release/VST3/stereospead.vst3
+Builds/VisualStudio2022/x64/Release/VST3/stereospead.vst3.recipe
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.log
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.tlog/CL.command.1.tlog
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.tlog/Cl.items.tlog
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.tlog/CL.read.1.tlog
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.tlog/CL.write.1.tlog
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.tlog/link.command.1.tlog
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.tlog/link.read.1.tlog
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.tlog/link.write.1.tlog
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.tlog/link.write.2u.tlog
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.tlog/rc.command.1.tlog
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.tlog/rc.read.1.tlog
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.tlog/rc.write.1.tlog
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.tlog/stereospead_VST3.lastbuildstate
+Builds/VisualStudio2022/x64/Release/VST3/stereospead_VST3.vcxproj.FileListAbsolute.txt

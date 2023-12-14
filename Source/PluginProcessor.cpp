@@ -29,7 +29,7 @@ StereospeadAudioProcessor::StereospeadAudioProcessor()
 #endif
     ),
     midSideBuffer(bufferSize), // circular buffer
-    stereoWidth(0.0f), // o un altro valore iniziale appropriato
+    stereoWidth(0.0f), 
     parameters(*this, nullptr, "Parameters", createParameterLayout())
 {
     

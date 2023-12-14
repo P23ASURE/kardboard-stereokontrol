@@ -24,7 +24,7 @@ StereospeadAudioProcessorEditor::StereospeadAudioProcessorEditor (StereospeadAud
     stereoWidthSlider.setLookAndFeel(&customLookAndFeel);
 
     setSize(400, 600);
-    startTimerHz(30);
+    startTimerHz(10);
 }
 
 void StereospeadAudioProcessorEditor::timerCallback() {
