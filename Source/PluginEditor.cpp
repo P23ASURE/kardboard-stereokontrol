@@ -16,7 +16,7 @@ StereospeadAudioProcessorEditor::StereospeadAudioProcessorEditor (StereospeadAud
     background = juce::ImageCache::getFromMemory(BinaryData::background_png, BinaryData::background_pngSize);
 
     stereoWidthSlider.setSliderStyle(juce::Slider::RotaryVerticalDrag);
-    stereoWidthSlider.setRange(0.0, 1.0, 0.01); // Range da 0.0 a 1.0 con intervalli di 0.01
+    stereoWidthSlider.setRange(0.0, 1.5, 0.01); // Range da 0.0 a 1.5 con intervalli di 0.01
     stereoWidthSlider.setTextBoxStyle(juce::Slider::NoTextBox, false, 0, 0);
     stereoWidthSlider.addListener(this);
     addAndMakeVisible(stereoWidthSlider);
