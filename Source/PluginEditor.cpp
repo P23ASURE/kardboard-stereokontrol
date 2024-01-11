@@ -11,7 +11,7 @@
 
 //==============================================================================
 StereospeadAudioProcessorEditor::StereospeadAudioProcessorEditor (StereospeadAudioProcessor& p)
-    : AudioProcessorEditor (&p), audioProcessor (p)
+    : AudioProcessorEditor (&p), audioProcessor (p), vectorScope(p)
 {
     background = juce::ImageCache::getFromMemory(BinaryData::background_png, BinaryData::background_pngSize);
 
@@ -23,12 +23,14 @@ StereospeadAudioProcessorEditor::StereospeadAudioProcessorEditor (StereospeadAud
     sliderAttachment = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(audioProcessor.getParameters(), "stereoWidth", stereoWidthSlider);
     stereoWidthSlider.setLookAndFeel(&customLookAndFeel);
 
+
+    addAndMakeVisible(&vectorScope);
     setSize(400, 600);
-    startTimerHz(10);
+    startTimerHz(15);
 }
 
 void StereospeadAudioProcessorEditor::timerCallback() {
-    repaint(); // Richiama repaint per ridisegnare l'interfaccia
+    vectorScope.repaint(); 
 }
 
 StereospeadAudioProcessorEditor::~StereospeadAudioProcessorEditor()
@@ -43,21 +45,13 @@ void StereospeadAudioProcessorEditor::paint(juce::Graphics& g)
     g.drawImageAt(background, 0, 0);
 
     // Buffer from processor
-    auto& stereospeadProcessor = static_cast<StereospeadAudioProcessor&>(processor);
-    auto& buffer = stereospeadProcessor.getStereoScopeBuffer();
-
-    //vectorscope
-    int scopeWidth = getWidth();
-    int scopeHeight = getHeight() / 2; 
-    int scopeYStart = getHeight() / 2; 
-
-    for (const auto& sample : buffer) {
-        float x = (scopeWidth / 2) + (sample.side * scopeWidth / 2);
-        float y = scopeYStart + (scopeHeight / 2) - (sample.mid * scopeHeight / 2);
-        // draw on vectorscope
-        g.setColour(juce::Colours::white);
-        g.fillEllipse(x, y, 2, 2);  
+    auto* stereospeadProcessor = dynamic_cast<StereospeadAudioProcessor*>(&processor);
+    if (!stereospeadProcessor) {
+        // Handle the error. For now, let's just return from the function.
+        return;
     }
+    auto& buffer = stereospeadProcessor->getStereoScopeBuffer();
+
 }
 
 void StereospeadAudioProcessorEditor::resized()
@@ -69,6 +63,8 @@ void StereospeadAudioProcessorEditor::resized()
     int knobY = (topHalf.getHeight() - knobSize) / 2;
     // knob position
     stereoWidthSlider.setBounds(topHalf.withSizeKeepingCentre(knobSize, knobSize));
+
+    vectorScope.setBounds(area);
 }
 
 void StereospeadAudioProcessorEditor::sliderValueChanged(juce::Slider* slider) {

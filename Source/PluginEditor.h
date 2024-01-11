@@ -1,3 +1,5 @@
+#include "VectorScope.h"
+
 class StereospeadAudioProcessorEditor : public juce::AudioProcessorEditor, public juce::Slider::Listener, private juce::Timer
 {
 public:
@@ -35,9 +37,10 @@ public:
     void paint(juce::Graphics&) override;
     void resized() override;
     void sliderValueChanged(juce::Slider* slider) override;
-
+    
 private:
     juce::Image background;
+    VectorScope vectorScope;
 
     void timerCallback() override;
     StereospeadAudioProcessor& audioProcessor;

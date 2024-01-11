@@ -10,15 +10,15 @@
 #include "PluginEditor.h"
 
 //==============================================================================
+
 juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout() {
     juce::AudioProcessorValueTreeState::ParameterLayout layout;
 
-    layout.add(std::make_unique<juce::AudioParameterFloat>("stereoWidth","Stereo Width",0.0f, 1.0f, 0.5f));
-    
+    layout.add(std::make_unique<juce::AudioParameterFloat>("stereoWidth", "Stereo Width", 0.0f, 1.5f, 0.5f));
+
     return layout;
 }
 
-//==============================================================================
 StereospeadAudioProcessor::StereospeadAudioProcessor()
     : AudioProcessor(BusesProperties()
 #if !JucePlugin_IsMidiEffect
@@ -28,22 +28,24 @@ StereospeadAudioProcessor::StereospeadAudioProcessor()
         .withOutput("Output", juce::AudioChannelSet::stereo(), true)
 #endif
     ),
-    midSideBuffer(bufferSize), // circular buffer
+    midSideBuffer(bufferSize), 
     stereoWidth(0.0f), 
     parameters(*this, nullptr, "Parameters", createParameterLayout())
 {
     
 }
 
+StereospeadAudioProcessor::~StereospeadAudioProcessor()
+{
+}
+//==============================================================================
+
+
+
 void StereospeadAudioProcessor::setStereoWidth(float newWidth) {
     std::lock_guard<std::mutex> lock(stereoWidthMutex);
     stereoWidth = newWidth;
 }
-
-StereospeadAudioProcessor::~StereospeadAudioProcessor()
-{
-}
-
 //==============================================================================
 const juce::String StereospeadAudioProcessor::getName() const
 {

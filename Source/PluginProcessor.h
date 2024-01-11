@@ -63,7 +63,7 @@ public:
 
     void setStereoWidth(float newWidth);
    
-    float getStereoWidth() const;
+    // float getStereoWidth() const;
 
     const std::vector<MidSideSample>& getStereoScopeBuffer() const {
         return midSideBuffer;
